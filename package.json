@@ -35,7 +35,7 @@
   "yuqueConfig": {
     "postPath": "source/_posts/",
     "cachePath": "yuque.json",
-    "mdNameFormat": "title",
+    "mdNameFormat": "slug",
     "adapter": "hexo",
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
