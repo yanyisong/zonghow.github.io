@@ -9,7 +9,7 @@
     "build:hexo": "hexo generate",
     "clean:hexo": "hexo clean",
     "clean:posts": "rimraf source/_posts/*",
-    "rm-temp-md": "rimraf source/_posts/template.md"
+    "rm-temp-md": "rimraf source/_posts/qyfd8m.md"
   },
   "hexo": {
     "version": "4.2.1"
