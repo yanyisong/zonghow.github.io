@@ -36,7 +36,7 @@
     "postPath": "source/_posts/",
     "cachePath": "yuque.json",
     "mdNameFormat": "slug",
-    "adapter": "markdown",
+    "adapter": "hexo",
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "zonghao",
