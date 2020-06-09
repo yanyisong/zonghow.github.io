@@ -1,0 +1,42 @@
+name: Deploy My Blog CI
+
+on:
+  schedule:
+    -
+      cron: 0 0 * * *
+  push:
+    branches: [ hexo ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+
+    - name: Build
+      env: 
+        YUQUE_TOKEN: ${{ secrets.YUQUE_ACCESS_TOKEN }}
+      run: |
+        npm install
+        npm run build
+
+    - name: Push to repo
+      env: 
+        REPO: "https://zonghow:${{ secrets.ACCESS_TOKEN }}@github.com/zonghow/zonghow.github.io.git"
+      run: |
+        cd public/
+        git init
+        git config user.name "zonghao"
+        git config user.email "zonghao1995@gmail.com"
+        echo "zonghao.net" > CNAME
+        git add --all
+        git commit -m "ci build"
+        git push -f $REPO master:master
