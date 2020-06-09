@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run clean && npm run yuque-sync && npm run rm-temp-md && npm run build:hexo",
+    "build": "npm run clean && npm run yuque-sync && npm run build:hexo",
     "clean": "npm run clean:hexo && npm run clean:posts",
     "yuque-sync": "yuque-hexo sync",
     "build:hexo": "hexo generate",
     "clean:hexo": "hexo clean",
-    "clean:posts": "rimraf source/_posts/*",
-    "rm-temp-md": "rimraf source/_posts/qyfd8m.md"
+    "clean:posts": "rimraf source/_posts/*"
   },
   "hexo": {
     "version": "4.2.1"
