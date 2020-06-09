@@ -233,14 +233,6 @@ widgets:
             #     icon: fas fa-rss
             #     url: /
     # Table of contents widget configurations
-    # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Dan Abramov: 'https://overreacted.io/'
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
@@ -255,16 +247,24 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: tags
+    # Recommendation links widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: links
+        # Names and URLs of the sites
+        links:
+            Dan Abramov: 'https://overreacted.io/'
     # Archives widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: archives
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: archives
     # Recent posts widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: recent_posts
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: recent_posts
     # Google FeedBurner email subscription widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
