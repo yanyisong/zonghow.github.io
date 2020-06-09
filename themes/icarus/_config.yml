@@ -250,6 +250,11 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: categories
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: tags
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -260,11 +265,6 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: recent_posts
-    # Tags widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: tags
     # Google FeedBurner email subscription widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
