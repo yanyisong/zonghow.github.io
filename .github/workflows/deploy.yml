@@ -30,7 +30,7 @@ jobs:
 
     - name: Push to repo
       env: 
-        REPO: "https://zonghow:${{ secrets.ACCESS_TOKEN }}@github.com/zonghow/zonghow.github.io.git"
+        REPO: "https://${{ secrets.ACCESS_TOKEN }}@github.com/zonghow/zonghow.github.io.git"
       run: |
         cd public/
         git init
