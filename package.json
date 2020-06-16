@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "watch": "hexo g -w & hexo s",
     "build": "npm run clean && npm run yuque-sync && npm run build:hexo",
     "clean": "npm run clean:hexo && npm run clean:posts",
     "yuque-sync": "yuque-hexo sync",

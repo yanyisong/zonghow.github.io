@@ -1,7 +1,7 @@
 # Version of the configuration file
 version: 3.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
-variant: cyberpunk
+variant: default
 # Path or URL to the website's logo
 # logo: /img/logo.svg
 logo:
@@ -105,8 +105,8 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        # theme: atom-one-light
-        theme: dracula
+        # theme: dracula
+        theme: atom-one-light
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -287,7 +287,7 @@ widgets:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
     # Enable page startup animations
-    animejs: false
+    animejs: true
     # Show the "back to top" button
     back_to_top: true
     # Baidu Analytics plugin settings
